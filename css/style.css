@@ -161,3 +161,61 @@ a:hover {
 }
 
 /* === [END SERVICE] === */
+
+/* ===== [PORTFOLIO] ===== */
+
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+/* ===== [END PORTFOLIO] ===== */
+
+/* ===== [Testimonials] ===*/
+.testimonial-carousel .text-center {
+  background-color: #eaecf0d0;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: gray;
+
+}
+
+
+.testimonial-carousel .owl-dot.active {
+  background-color: blue;
+}
+
+/* ===== [Testimonials End] ===*/
+
+/* footer */
+.text-red {
+  color: red;
+}

@@ -40,13 +40,39 @@
         });
     }
 
-    // Skills
+    // Skills bar
     $('.skill').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, { offset: '80%' });
 
+
+    // // porfolio isotpe and filter
+    // let portfolioIsotope = $('.portfolio-container').isotope({
+    //     itemSelector: '.portfolio-item',
+    //     layoutMode: 'fitRows'
+    // });
+
+    // $('#portfolio-filters li').on('click', function () {
+
+    //     // $('#portfolio-filters li').removeClass('active');
+    //     // $(this).addClass('active');
+
+    //     // portfolioIsotope.isotope({ filter: $(this).data('filter') });
+
+    // })
+
+
+    // Mentor Carosel 
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        dots: true,
+        loop: true,
+        items: 1
+        
+    })
 
 
 
